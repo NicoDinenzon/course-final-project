@@ -1,27 +1,91 @@
-@import "~sanitize.css"
-@import "vars.styl"
-  @import "header"
+@import '~sanitize.css';
+@import 'vars.styl';
 
-body {
-  background-color: black;
+.TopLeft {
+  position: absolute;
+  width: 330px;
+  height: 42px;
+  top: -9px;
+  left: -60px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 7px;
+  line-height: 22px;
+  text-align: center;
+  color: #F5F5DC;
+  position: fixed;
+  margin-top: 1vh;
 }
 
-h1 {
-  color: white;
+.parent {
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.hello {
-  background-color: pink; 
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 0;
+}
 
-  .title {
-    color: blue;
-  }
-  .box{
-    background-color: blue;
+main {
+  z-index: 10;
+  position: relative;
+}
 
-    h3{
-      font-size: 20px
-      color: white;
-    }
-    }
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.Name {
+  color: #F5F5DC;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+}
+
+.LastName {
+  color: #F5F5DC;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  margin-top: -10vh;
+}
+
+.PicsParent {
+  height: 100vh;
+  width: 100vw;
+  overflow hidden;
+}
+
+.FirstBackground {
+  height: 100%;
+  width: 100%;
+  background-image: url('../assets/newyork.jpg');
+  background-size: cover;
+}
+
+.SecondBackground {
+  height: 200%;
+  width: 100%;
+  position relative;
+  top: -150%;
+  background-image: url('../assets/Paris.jpg');
+  background-size: cover;
+}
+
+.ThirdBackground {
+  height: 200%;
+  width: 100%;
+  position relative;
+  top: -150%;
+  background-image: url('../assets/Londres.jpg');
+  background-size: cover;
 }
