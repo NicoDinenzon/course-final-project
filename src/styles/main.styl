@@ -43,26 +43,26 @@ main {
 }
 
 .Name {
-  color: #F5F5DC;
-  font-family: Montserrat;
+  color: #FFFFF0;
+  font-family: Jacques Francois;
   font-style: normal;
   font-weight: 600;
-  font-size: 72px;
+  font-size: 96px;
 }
 
 .LastName {
-  color: #F5F5DC;
-  font-family: Montserrat;
+  color: #FFFFF0;
+  font-family: Jacques Francois;
   font-style: normal;
   font-weight: 600;
-  font-size: 72px;
+  font-size: 96px;
   margin-top: -10vh;
 }
 
 .PicsParent {
   height: 100vh;
   width: 100vw;
-  overflow hidden;
+  overflow: hidden;
 }
 
 .FirstBackground {
@@ -75,17 +75,230 @@ main {
 .SecondBackground {
   height: 200%;
   width: 100%;
-  position relative;
+  position: relative;
   top: -150%;
   background-image: url('../assets/Paris.jpg');
-  background-size: cover;
+  background-size: 1440px 900px;
+}
+
+.Works {
+  position: absolute;
+  width: 550px;
+  height: 113px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  font-family: Jacques Francois;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 127px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.london {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 224px;
+  height: 188px;
+  border-radius: 100%;
+  transition: filter 0.5s ease-in-out;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+
+.london:hover {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+.Bsas {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  width: 224px;
+  height: 188px;
+  border-radius: 100%;
+  transition: filter 0.5s ease-in-out;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+
+.Bsas:hover {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+.kualalumpur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 224px;
+  height: 188px;
+  border-radius: 100%;
+  transition: filter 0.5s ease-in-out;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+
+.kualalumpur:hover {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
 }
 
 .ThirdBackground {
   height: 200%;
   width: 100%;
-  position relative;
+  position: relative;
   top: -150%;
   background-image: url('../assets/Londres.jpg');
-  background-size: cover;
+  background-size: 1440px 900px;
+}
+
+.Me1 {
+  width: 80px;
+  border-radius: 100%;
+  transition: filter 0.5s ease-in-out;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+  image-rendering: crisp-edges;
+ 
+}
+
+.parentButton {
+  position: absolute;
+  top: 22%;
+  right: 10%;
+}
+
+.Text1 {
+  color: white;
+  font-family: Jacques Francois;
+  font-size: 35px;
+  white-space: nowrap;
+  position: absolute;
+  top: 12px;
+  opacity: 0;
+}
+
+.parentButton:hover {
+  transform: scale(2);
+  transition: transform 2s;
+}
+
+.parentButton:hover .Me1 {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%);
+}
+
+.parentButton:hover .Text1 {
+  transform: translateX(-100%);
+  opacity: 1;
+  transition: 2s;
+}
+
+.Me2 {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  height: 120px;
+  border-radius: 100%;
+  transition: filter 0.5s ease-in-out;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+  image-rendering: crisp-edges;
+ 
+}
+
+.parentButton2 {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.Text2 {
+  color: white;
+  font-family: Jacques Francois;
+  font-size: 50px;
+  white-space: nowrap;
+  position: absolute;
+  top: 12px;
+  opacity: 0;
+}
+
+.parentButton2:hover .Me2 {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+  transform: scale(2);
+  transition: transform 2s;
+}
+
+.parentButton2:hover .Text2 {
+  transform: translateX(77%);
+  opacity: 1;
+  transition: 2s;
+}
+
+.Me3 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  
+  height: 120px;
+  border-radius: 100%;
+  transition: filter 0.5s ease-in-out;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+
+.Me3:hover {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+  transform: scale(2);
+  transition: transform 2s;
+}
+
+.parentButton3 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+.Text3 {
+  color: white;
+  font-family: Jacques Francois;
+  font-size: 50px;
+  white-space: nowrap;
+  position: absolute;
+  top: 12px;
+  opacity: 0;
+}
+.Text4 {
+  color: white;
+  font-family: Jacques Francois;
+  font-size: 50px;
+  white-space: nowrap;
+  position: absolute;
+  top: 12px;
+  opacity: 0;
+}
+
+.parentButton3:hover .Me3 {
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+  transform: scale(2);
+  transition: transform 2s;
+}
+
+.parentButton3:hover .Text3 {
+  transform: translateX(60%);
+  opacity: 1;
+  transition: 2s;
+}
+.parentButton3:hover .Text4 {
+  transform: translateX(-120%);
+  opacity: 1;
+  transition: 2s;
 }

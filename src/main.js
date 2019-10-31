@@ -16,16 +16,31 @@ scene3.addTo(controller);
 
 
 
-/*const controller = new ScrollMagic.Controller();
-
-const tween1 = TweenMax.from("#parallax1 p", 1, { x: "-100%" });
-const scene2 = new ScrollMagic.Scene({ triggerElement: "#parallax1", offset: 200, duration: 200 });
-scene2.setTween(tween1);
-scene2.addIndicators();
-scene2.addTo(controller);
+const controller2 = new ScrollMagic.Controller();
 
 
-const tween2 = TweenMax.from("#parallax2 p", 1, { x: "-100%" });
-const textScene = new ScrollMagic.Scene({ triggerElement: "#parallax2", offset: 200, duration: 200 });
-textScene.setTween(tween2);
-textScene.addTo(controller);*/
+        const tl = new TimelineMax();
+        
+        tl.from("#parallax2 p", 1, { x: "100vw" });
+
+        const textScene = new ScrollMagic.Scene({ triggerElement: "#parallax2", offset: "-500%", duration: "100%" });
+        textScene.setTween( tl );
+        textScene.addIndicators();
+        textScene.addTo(controller2);
+
+
+const controller1 = new ScrollMagic.Controller();
+
+
+const tl1 = new TimelineMax();
+
+tl1.from("#parallax1 p", 1, { x: "-100vw" });
+
+const textScene1 = new ScrollMagic.Scene({ triggerElement: "#parallax1", offset: "-500%", duration: "100%" });
+textScene1.setTween( tl1 );
+textScene1.addIndicators();
+textScene1.addTo(controller1);
+
+
+
+
