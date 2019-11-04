@@ -25,7 +25,7 @@ const controller2 = new ScrollMagic.Controller();
 
         const textScene = new ScrollMagic.Scene({ triggerElement: "#parallax2", offset: "-500%", duration: "100%" });
         textScene.setTween( tl );
-        textScene.addIndicators();
+       // textScene.addIndicators();
         textScene.addTo(controller2);
 
 
@@ -38,7 +38,7 @@ tl1.from("#parallax1 p", 1, { x: "-100vw" });
 
 const textScene1 = new ScrollMagic.Scene({ triggerElement: "#parallax1", offset: "-500%", duration: "100%" });
 textScene1.setTween( tl1 );
-textScene1.addIndicators();
+//textScene1.addIndicators();
 textScene1.addTo(controller1);
 
 
